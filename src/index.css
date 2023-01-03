@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --Soft-purple: #7E52FF;
+  --Light-purple: #F6F8FD;
+  --Main-font-color: #000000;
+  --Secondary-font-color: #5A5A5A;
+  --White-font-color: #FFFFFF;
+  --Urbanist: 'Urbanist', sans-serif;
+  --Inter: 'Inter', sans-serif;
+}
+
+.urbanist{
+  font-family: var(--Urbanist);
+}
+
+.inter{
+  font-family: var(--Inter);
+}
+
+.text-soft-purple{
+  color: var(--Soft-purple);
+}
+
+.text-secondary{
+  color: var(--Secondary-font-color);
+}
+
+.bg-light-purple{
+  background-color: var(--Light-purple);
+}
+
+.bg-soft-purple{
+  background-color: var(--Soft-purple);
+}
+
+@media only screen and (min-width: 992px) {
+
+.grid-template{
+    display: grid;
+    grid-template-columns: 1.7fr 2fr;
+}
+
+.grid-promotion{
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+}
+
+.grid-course{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
